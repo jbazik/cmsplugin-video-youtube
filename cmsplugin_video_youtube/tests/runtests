@@ -1,0 +1,21 @@
+#!/bin/bash -i
+
+dir=$(dirname $0)
+venv="$dir/venv"
+build="$dir/build"
+req="$dir/requirements.txt"
+
+trap 'rm -rf $venv $build' 0 1 2 5 10 15
+
+virtualenv $venv
+
+. $venv/bin/activate
+pip install -r $req
+
+while true; do
+	echo ""
+	echo -n "Run tests (Y|n)? "
+	read a
+	[ "$a" = n ] && break
+	python runtests.py
+done

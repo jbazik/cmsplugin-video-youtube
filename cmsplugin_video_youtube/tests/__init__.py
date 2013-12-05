@@ -1,0 +1,1 @@
+from cmsplugin_video_youtube.tests.models import ModelTests

@@ -1,0 +1,2 @@
+{% load youtube %}
+<iframe width="{{ object.width }}" height="{{ object.height }}" src="//www.youtube.com/embed/{{ object.video_id }}{% youtube_params object %}" frameborder="0"{{ object.fullscreen|yesno:" allowfullscreen," }}></iframe>

@@ -1,0 +1,32 @@
+#!/bin/bash
+
+dir=$(dirname $0)
+venv="$dir/venv"
+build="$dir/build"
+req="$dir/requirements.txt"
+hist="$dir/.history"
+
+trap 'rm -rf $venv $build' 0 1 2 5 10 15
+
+virtualenv $venv
+
+. $venv/bin/activate
+pip install -r $req
+
+cd $dir || exit 1
+
+history -r $hist
+while true; do
+	echo ""
+	read -ep 'manage> ' cmd
+	history -s "$cmd"
+	case "$cmd" in
+		q|Q|quit)
+			break;;
+		bash)
+			bash -i;;
+		*)
+			eval "rlwrap python manage.py $cmd";;
+	esac
+done
+history -w $hist

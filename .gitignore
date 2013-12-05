@@ -1,0 +1,9 @@
+*.pyc
+*.sqlite3
+*.egg-info
+.history
+venv
+build
+dist
+MANIFEST
+MANIFEST.in
