@@ -29,15 +29,15 @@ Settings
 The following settings establish defaults for new videos.  Each of these
 values can be set per-video.
 
-* CMS_YOUTUBE_VIDEO_WIDTH
+* CMS_YOUTUBE_DEFAULT_WIDTH
 
   Player width, in pixels.  Default is 640.
 
-* CMS_YOUTUBE_VIDEO_HEIGHT
+* CMS_YOUTUBE_DEFAULT_HEIGHT
 
   Player height, in pixels.  Default is 360 (360p).
 
-* CMS_YOUTUBE_VIDEO_FULLSCREEN
+* CMS_YOUTUBE_DEFAULT_FULLSCREEN
 
   Provide "full screen" button.  Default is True.
 
@@ -48,27 +48,27 @@ is used.  Each of these can also be set per-video.  For descriptions
 and defaults, see:
 `<https://developers.google.com/youtube/player_parameters#Parameters>`_
 
-* CMS_YOUTUBE_VIDEO_AUTOHIDE
+* CMS_YOUTUBE_DEFAULT_AUTOHIDE
 
-* CMS_YOUTUBE_VIDEO_AUTOPLAY
+* CMS_YOUTUBE_DEFAULT_AUTOPLAY
 
-* CMS_YOUTUBE_VIDEO_COLOR
+* CMS_YOUTUBE_DEFAULT_COLOR
 
-* CMS_YOUTUBE_VIDEO_CONTROLS
+* CMS_YOUTUBE_DEFAULT_CONTROLS
 
-* CMS_YOUTUBE_VIDEO_IV_LOAD
+* CMS_YOUTUBE_DEFAULT_IV_LOAD
 
-* CMS_YOUTUBE_VIDEO_LOOP
+* CMS_YOUTUBE_DEFAULT_LOOP
 
-* CMS_YOUTUBE_VIDEO_MODESTBRANDING
+* CMS_YOUTUBE_DEFAULT_MODESTBRANDING
 
-* CMS_YOUTUBE_VIDEO_ORIGIN
+* CMS_YOUTUBE_DEFAULT_ORIGIN
 
   If not set and django.contrib.sites is installed, the domain of the
   current site is used.
 
-* CMS_YOUTUBE_VIDEO_RELATED
+* CMS_YOUTUBE_DEFAULT_RELATED
 
-* CMS_YOUTUBE_VIDEO_SHOWINFO
+* CMS_YOUTUBE_DEFAULT_SHOWINFO
 
-* CMS_YOUTUBE_VIDEO_THEME
+* CMS_YOUTUBE_DEFAULT_THEME
